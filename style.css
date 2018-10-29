@@ -5,6 +5,30 @@
 
 
 
+@keyframes start_fadeout {
+    0% {opacity: 1;}
+   100% {opacity: 0;}
+}
+
+
+.start_fadeout {
+    animation-name: start_fadeout;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+#start {
+    background-color: blue;
+    width: 100vw;
+    height: 56.25vw;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
 
 #menu_background {
 /*    background-image: url('produktion/baggrund.svg');*/
@@ -12,7 +36,7 @@
     background-size: cover;
     position: static;
     width: 100vw;
-    height: 56vw;
+    height: 56.25vw;
     z-index: -1;
 }
 
@@ -27,9 +51,64 @@
     bottom: 28vw;
     left: 42vw;
     z-index: 2;
+    transform: translateY(0.5vw) translateX(0.3vw);
+}
+
+#pengesedel1 {
+    background: url('produktion/penge.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 6vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 18vw;
+    left: 42vw;
+    z-index: 2;
+    transform: translateY(-0.4vw) translateX(0.3vw);
     
 }
 
+#pengesedel2 {
+    background: url('produktion/penge.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 6vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 9vw;
+    left: 32vw;
+    z-index: 2;
+    transform: translateY(-0.2vw) translateX(0.5vw);
+
+}
+
+#pengesedel3 {
+    background: url('produktion/penge.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 6vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 18vw;
+    left: 62vw;
+    z-index: 2;
+    transform: translateY(-0.3vw) translateX(-0.5vw);
+
+}
+
+#pengesedel4 {
+    background: url('produktion/penge.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 6vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 27vw;
+    left: 53vw;
+    z-index: 2;
+    transform: translateY(-0.5vw) translateX(-0.7vw);
+
+}
 
 #dokument {
     background: url('produktion/Artboard%2035.svg');
@@ -41,8 +120,62 @@
     bottom: 28vw;
     left: 33vw;
     z-index: 2;
-    
+    transform: translateY(0.2vw) translateX(0.5vw);
 }
+
+#dokument1 {
+    background: url('produktion/Artboard%2035.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 5vw;
+    margin: auto;
+    bottom: 10vw;
+    left: 62vw;
+    z-index: 2;
+    transform: translateY(0.6vw) translateX(0.7vw);
+}
+
+
+#dokument2 {
+    background: url('produktion/Artboard%2035.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 5vw;
+    margin: auto;
+    bottom: 28vw;
+    left: 62vw;
+    z-index: 2;
+    transform: translateY(0.2vw) translateX(0.5vw);
+}
+
+#dokument3 {
+    background: url('produktion/Artboard%2035.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 5vw;
+    margin: auto;
+    bottom: 19vw;
+    left: 53vw;
+    z-index: 2;
+    transform: translateY(0.2vw) translateX(0.4vw);
+}
+
+#dokument4 {
+    background: url('produktion/Artboard%2035.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 5vw;
+    margin: auto;
+    bottom: 19vw;
+    left: 33vw;
+    z-index: 2;
+    transform: translateY(0.3vw) translateX(0.5vw);
+}
+
 
 #social {
      background: url('produktion/socialstyren.svg');
@@ -132,5 +265,113 @@
     z-index: 2;
     font-family: sans-serif;
 }
+
+
+
+#sky{
+    background: url('produktion/sky.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width:16vw;
+    height: 11vw;
+    margin: auto;
+    bottom: 40vw;
+    left: 70vw;
+
+}
+
+#sky1{
+    background: url('produktion/sky.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width:16vw;
+    height: 11vw;
+    margin: auto;
+    bottom: 36vw;
+    left: 65vw;
+
+}
+
+#sky2{
+    background: url('produktion/sky.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width:16vw;
+    height: 11vw;
+    margin: auto;
+    bottom: 37vw;
+    left: 71vw;
+
+}
+
+#sky3{
+    background: url('produktion/sky.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width:16vw;
+    height: 11vw;
+    margin: auto;
+    bottom: 39vw;
+    left: 68vw;
+
+}
+
+.sky_flyt{
+    animation-name: sky_kf;
+    animation-duration:50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ animation-direction: reverse;
+}
+
+.sky_flyt1{
+    animation-name: sky_kf;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+
+}
+
+.sky_flyt2{
+    animation-name: sky_kf;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+
+.sky_flyt3{
+    animation-name: sky_kf;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes sky_kf {
+    0% {
+        transform: translateX(-90vw);
+    }
+
+    100% {
+        transform: translateX(90vw);
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 
