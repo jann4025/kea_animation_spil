@@ -1,0 +1,136 @@
+* {
+    overflow: hidden;
+    margin: 0;
+}
+
+
+
+
+#menu_background {
+/*    background-image: url('produktion/baggrund.svg');*/
+    background: url('produktion/baggrund_2.svg');
+    background-size: cover;
+    position: static;
+    width: 100vw;
+    height: 56vw;
+    z-index: -1;
+}
+
+
+#pengesedel {
+    background: url('produktion/penge.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 6vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 28vw;
+    left: 42vw;
+    z-index: 2;
+    
+}
+
+
+#dokument {
+    background: url('produktion/Artboard%2035.svg');
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 5vw;
+    margin: auto;
+    bottom: 28vw;
+    left: 33vw;
+    z-index: 2;
+    
+}
+
+#social {
+     background: url('produktion/socialstyren.svg');
+    background-size: cover;
+    position: absolute;
+    width: 40vw;
+    height: 45vw;
+    margin: auto;
+    bottom: 1vw;
+    left: 30vw;
+    z-index: 2;
+
+}
+
+#points {
+     background: url('produktion/Ui%20element%20-%20point%20.svg');
+    background-size: cover;
+    position: absolute;
+    width: 9vw;
+    height: 4vw;
+    margin: auto;
+    bottom: 47vw;
+    left: 46vw;
+    z-index: 2;
+}
+
+#energy {
+     background: url('produktion/Ui%20element%20-%20liv%20.svg');
+    background-size: cover;
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 47vw;
+    left: 12vw;
+    z-index: 2;
+}
+
+#energy2 {
+     background: url('produktion/Ui%20element%20-%20liv%20.svg');
+    background-size: cover;
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 47vw;
+    left: 16vw;
+    z-index: 2;
+}
+
+#energy3 {
+     background: url('produktion/Ui%20element%20-%20liv%20.svg');
+    background-size: cover;
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 47vw;
+    left: 20vw;
+    z-index: 2;
+}
+
+
+#time {
+    background: url('produktion/ui%20tid.svg');
+    background-size: cover;
+    position: absolute;
+    width: 9vw;
+    height: 4vw;
+    margin: auto;
+    bottom: 47vw;
+    left: 76vw;
+    z-index: 2;
+}
+
+
+
+#menu_knap {
+     background: url('produktion/menu.svg');
+    background-size: cover;
+    position: absolute;
+    width:7vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 49vw;
+    left: 91vw;
+    z-index: 2;
+    font-family: sans-serif;
+}
+
+
