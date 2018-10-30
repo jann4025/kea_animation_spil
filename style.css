@@ -20,15 +20,28 @@
 }
 
 #start {
-    background-color: blue;
+    background-image: url(produktion/Startsk%C3%A6rm.svg);
     width: 100vw;
     height: 56.25vw;
-    background-size: cover;
+    background-size: 100%;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 3;
 }
+
+#play {
+    background-image: url(produktion/Startkanp.svg);
+    width: 35vw;
+    height: 15vw;
+    background-size: cover;
+    position: absolute;
+    top: 32vw;
+    right: 32vw;
+    z-index: 3;
+}
+
+
 
 #menu_background {
 /*    background-image: url('produktion/baggrund.svg');*/
