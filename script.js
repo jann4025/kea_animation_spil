@@ -7,8 +7,8 @@ function sidenVises() {
 
 function showStart() {
     console.log("show start");
-     document.querySelector("#game_background").classList.add("hide");
-    document.querySelector("#start").classList.remove("hide");
+     document.querySelector("#game_background").classList.remove("hide");
+    document.querySelector("#start").classList.add("hide");
     document.querySelector("#play").classList.add("pulse");
     document.querySelector("#play").addEventListener("click", playClickHandler)
 }
