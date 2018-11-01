@@ -3,26 +3,36 @@
     margin: 0;
 }
 
+
+
+
+
+
 #screen {
-  width: 100vw;
-  height: 56.25vw;
-  background-color: green;
+    width: 100vw;
+    height: 56.25vw;
+    background-color: green;
 
-  overflow: hidden;
-  position: relative;
+    overflow: hidden;
+    position: relative;
 
-/*  touch-action: none;*/
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
+    /*  touch-action: none;*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 }
 
 
 
 @keyframes start_fadeout {
-    0% {opacity: 1;}
-   100% {opacity: 0;}
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 
@@ -59,7 +69,7 @@
 
 
 #menu_background {
-/*    background-image: url('produktion/baggrund.svg');*/
+    /*    background-image: url('produktion/baggrund.svg');*/
     background: url('produktion/baggrund_2.svg');
     background-size: cover;
     position: static;
@@ -73,7 +83,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top:10vw;
+    top: 10vw;
     right: 15vw;
     width: 70vw;
     height: 45vw;
@@ -81,7 +91,7 @@
 }
 
 #gameover {
-     background-image: url(produktion/tabt.svg);
+    background-image: url(produktion/tabt.svg);
     width: 100vw;
     height: 56.25vw;
     background-size: 100%;
@@ -96,7 +106,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top:24vw;
+    top: 24vw;
     right: 47vw;
     width: 5vw;
     height: 5vw;
@@ -108,7 +118,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top:44vw;
+    top: 44vw;
     right: 10vw;
     width: 10vw;
     height: 10vw;
@@ -132,7 +142,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top:12vw;
+    top: 12vw;
     right: 20vw;
     width: 10vw;
     height: 12vw;
@@ -144,7 +154,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top:12vw;
+    top: 12vw;
     right: 40vw;
     width: 10vw;
     height: 12vw;
@@ -156,7 +166,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top:2vw;
+    top: 2vw;
     right: 2vw;
     width: 2vw;
     height: 2vw;
@@ -169,43 +179,45 @@
 
 
 .blur {
-  filter:blur(5px) brightness(80%);
+    filter: blur(5px) brightness(80%);
 }
 
 
 .fade_out {
-  animation-name: fadeout_kf;
-  animation-duration: 1.7s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+    animation-name: fadeout_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeout_kf {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 
 .pulse {
-  animation-name: pulse_kf;
-  animation-duration: 1.7s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in;
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
 }
 
 
 @keyframes pulse_kf {
-  0% {
-    transform: scale(0.97);
-  }
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 
@@ -233,7 +245,7 @@
     left: 42vw;
     z-index: 2;
     transform: translateY(-0.4vw) translateX(0.3vw);
-    
+
 }
 
 #pengesedel2 {
@@ -346,7 +358,7 @@
 
 
 #social {
-     background: url('produktion/socialstyren.svg');
+    background: url('produktion/socialstyren.svg');
     background-size: cover;
     position: absolute;
     width: 40vw;
@@ -358,20 +370,22 @@
 
 }
 
-#points {
-     background: url('produktion/Ui%20element%20-%20point%20.svg');
-    background-size: cover;
+#points_box {
+    background: url('produktion/Ui%20element%20-%20point%20.svg');
+    background-size: 100%;
     position: absolute;
+    background-repeat: no-repeat;
     width: 9vw;
     height: 4vw;
     margin: auto;
     bottom: 50vw;
     left: 46vw;
     z-index: 2;
+    padding: 0.7vw;
 }
 
 #energy {
-     background: url('produktion/Ui%20element%20-%20liv%20.svg');
+    background: url('produktion/Ui%20element%20-%20liv%20.svg');
     background-size: cover;
     position: absolute;
     width: 3vw;
@@ -383,7 +397,7 @@
 }
 
 #energy2 {
-     background: url('produktion/Ui%20element%20-%20liv%20.svg');
+    background: url('produktion/Ui%20element%20-%20liv%20.svg');
     background-size: cover;
     position: absolute;
     width: 3vw;
@@ -395,7 +409,7 @@
 }
 
 #energy3 {
-     background: url('produktion/Ui%20element%20-%20liv%20.svg');
+    background: url('produktion/Ui%20element%20-%20liv%20.svg');
     background-size: cover;
     position: absolute;
     width: 3vw;
@@ -422,10 +436,10 @@
 
 
 #menu_knap {
-     background: url('produktion/menu.svg');
+    background: url('produktion/menu.svg');
     background-size: cover;
     position: absolute;
-    width:7vw;
+    width: 7vw;
     height: 3vw;
     margin: auto;
     bottom: 52vw;
@@ -436,12 +450,12 @@
 
 
 
-#sky{
+#sky {
     background: url('produktion/sky.svg');
     background-size: 60%;
     background-repeat: no-repeat;
     position: absolute;
-    width:16vw;
+    width: 16vw;
     height: 11vw;
     margin: auto;
     bottom: 40vw;
@@ -449,12 +463,12 @@
 
 }
 
-#sky1{
+#sky1 {
     background: url('produktion/sky.svg');
     background-size: 60%;
     background-repeat: no-repeat;
     position: absolute;
-    width:16vw;
+    width: 16vw;
     height: 11vw;
     margin: auto;
     bottom: 36vw;
@@ -462,12 +476,12 @@
 
 }
 
-#sky2{
+#sky2 {
     background: url('produktion/sky.svg');
     background-size: 60%;
     background-repeat: no-repeat;
     position: absolute;
-    width:16vw;
+    width: 16vw;
     height: 11vw;
     margin: auto;
     bottom: 37vw;
@@ -475,12 +489,12 @@
 
 }
 
-#sky3{
+#sky3 {
     background: url('produktion/sky.svg');
     background-size: 60%;
     background-repeat: no-repeat;
     position: absolute;
-    width:16vw;
+    width: 16vw;
     height: 11vw;
     margin: auto;
     bottom: 39vw;
@@ -488,15 +502,15 @@
 
 }
 
-.sky_flyt{
+.sky_flyt {
     animation-name: sky_kf;
-    animation-duration:50s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
- animation-direction: reverse;
+    animation-direction: reverse;
 }
 
-.sky_flyt1{
+.sky_flyt1 {
     animation-name: sky_kf;
     animation-duration: 40s;
     animation-iteration-count: infinite;
@@ -505,7 +519,7 @@
 
 }
 
-.sky_flyt2{
+.sky_flyt2 {
     animation-name: sky_kf;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -514,12 +528,25 @@
 
 }
 
-.sky_flyt3{
+.sky_flyt3 {
     animation-name: sky_kf;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
+}
+
+
+#points {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1vw;
+    left: 3vw;
+    color: white;
+    font-family: ratio, sans-serif;
+    text-align: center;
+    /* margin-bottom: 155px; */
+    z-index: 2;
 }
 
 @keyframes sky_kf {
@@ -532,14 +559,3 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
