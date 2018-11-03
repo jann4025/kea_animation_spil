@@ -1,4 +1,5 @@
 let points = 0;
+let life = 3;
 
 window.addEventListener("load", sidenVises);
 
@@ -35,50 +36,51 @@ function startGame() {
      document.querySelector("#start").classList.add("hide");
     document.querySelector("#start").classList.remove("fade_out");
      document.querySelector("#points").innerHTML = points;
-    document.querySelector("#pengesedel").addEventListener("click", clickMoney);
-    document.querySelector("#pengesedel1").addEventListener("click", clickMoney);
-    document.querySelector("#pengesedel2").addEventListener("click", clickMoney);
-    document.querySelector("#pengesedel3").addEventListener("click", clickMoney);
-    document.querySelector("#pengesedel4").addEventListener("click", clickMoney);
-     document.querySelector("#dokument").addEventListener("click", clickDok);
-     document.querySelector("#dokument1").addEventListener("click", clickDok);
-     document.querySelector("#dokument2").addEventListener("click", clickDok);
-     document.querySelector("#dokument3").addEventListener("click", clickDok);
-     document.querySelector("#dokument4").addEventListener("click", clickDok);
+    document.querySelector("#pengesedel").addEventListener("click", clickElement);
+    document.querySelector("#pengesedel1").addEventListener("click", clickElement);
+    document.querySelector("#pengesedel2").addEventListener("click", clickElement);
+    document.querySelector("#pengesedel3").addEventListener("click", clickElement);
+    document.querySelector("#pengesedel4").addEventListener("click", clickElement);
+     document.querySelector("#dokument").addEventListener("click", clickElement);
+     document.querySelector("#dokument1").addEventListener("click", clickElement);
+     document.querySelector("#dokument2").addEventListener("click", clickElement);
+     document.querySelector("#dokument3").addEventListener("click", clickElement);
+     document.querySelector("#dokument4").addEventListener("click", clickElement);
 
 
 
 }
 
 
-function clickMoney(){
-	console.log("pengeseddel");
-    //points = points +1;
-    //points += 1;
-    points += 10;
+function clickElement(){
+       console.log("clickElement");
 
-    //kald en variabel
-    console.log(points);
-   //input i tom div
-    document.querySelector("#points").innerHTML = points;
-    console.log(this);
-    this.classList.add("hide");
-    this.removeEventListener("click" , clickMoney);
+    if (this.classList.contains("dok")) {
+        console.log("Dokument");
+        document.querySelector("#life" + life).classList.add("hide");
+        life--;
 
+    } else if (this.classList.contains("pengesedel")) {
+        console.log("pengesedel");
+        points += 10;
+        document.querySelector("#points").innerHTML = points;
+    }
+
+
+    gameStatus();
+}
+
+
+function gameStatus() {
+    console.log("gameStatus");
+    console.log(life);
+    if (life == 0) {
+        document.querySelector("#gameover").classList.remove("hide");
+    } else if (points == 100) {
+
+        document.querySelector("#levelcomplete").classList.remove("hide");
+}
 }
 
 
 
-function clickDok(){
-	console.log("dokumnet");
-
-    points -= 50;
-
-    //kald en variabel
-    console.log(points);
-   //input i tom div
-    document.querySelector("#points").innerHTML = points;
-    console.log(this);
-    this.classList.add("hide");
-    this.removeEventListener("click" , clickDok);
-}

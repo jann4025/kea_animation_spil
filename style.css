@@ -372,49 +372,41 @@
 
 #points_box {
     background: url('produktion/Ui%20element%20-%20point%20.svg');
-    background-size: 100%;
+    background-size: 80%;
     position: absolute;
     background-repeat: no-repeat;
     width: 9vw;
     height: 4vw;
     margin: auto;
-    bottom: 50vw;
+    bottom: 48vw;
     left: 46vw;
     z-index: 2;
     padding: 0.7vw;
 }
 
-#energy {
+
+.heart{
     background: url('produktion/Ui%20element%20-%20liv%20.svg');
     background-size: cover;
     position: absolute;
     width: 3vw;
     height: 3vw;
     margin: auto;
+}
+
+#life1 {
     bottom: 50vw;
     left: 12vw;
     z-index: 2;
 }
 
-#energy2 {
-    background: url('produktion/Ui%20element%20-%20liv%20.svg');
-    background-size: cover;
-    position: absolute;
-    width: 3vw;
-    height: 3vw;
-    margin: auto;
+#life2 {
     bottom: 50vw;
     left: 16vw;
     z-index: 2;
 }
 
-#energy3 {
-    background: url('produktion/Ui%20element%20-%20liv%20.svg');
-    background-size: cover;
-    position: absolute;
-    width: 3vw;
-    height: 3vw;
-    margin: auto;
+life3 {
     bottom: 50vw;
     left: 20vw;
     z-index: 2;
@@ -428,7 +420,7 @@
     width: 9vw;
     height: 4vw;
     margin: auto;
-    bottom: 50vw;
+    bottom: 49vw;
     left: 76vw;
     z-index: 2;
 }
@@ -540,7 +532,7 @@
 #points {
     font-size: 2rem;
     position: absolute;
-    bottom: 1vw;
+    bottom: 2vw;
     left: 3vw;
     color: white;
     font-family: ratio, sans-serif;
