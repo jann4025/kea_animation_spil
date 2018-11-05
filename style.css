@@ -52,7 +52,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 3;
+    z-index: 2;
 }
 
 #play {
@@ -149,12 +149,36 @@
     z-index: 2;
 }
 
+#musik_off {
+    background: url('produktion/Musik%20Fra.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12vw;
+    right: 20vw;
+    width: 10vw;
+    height: 12vw;
+    z-index: 2;
+}
+
 #lyd {
     background: url('produktion/Lyd%20til.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 12vw;
+    right: 40vw;
+    width: 10vw;
+    height: 12vw;
+    z-index: 2;
+}
+
+#lyd_off {
+    background: url('produktion/Lyd%20fra.svg');
+    background-size: 58%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 14vw;
     right: 40vw;
     width: 10vw;
     height: 12vw;
@@ -406,7 +430,7 @@
     z-index: 2;
 }
 
-life3 {
+#life3 {
     bottom: 50vw;
     left: 20vw;
     z-index: 2;
@@ -425,6 +449,16 @@ life3 {
     z-index: 2;
 }
 
+#time_left {
+    position: absolute;
+font-size: 3rem;
+    margin: auto;
+    bottom: 49vw;
+    left: 78vw;
+    z-index: 2;
+    font-family: ratio, sans-serif;
+    color: white;
+}
 
 
 #menu_knap {
@@ -437,7 +471,20 @@ life3 {
     bottom: 52vw;
     left: 91vw;
     z-index: 2;
-    font-family: arial, sans-serif;
+font-family: ratio, sans-serif;
+}
+
+#menu_knap1 {
+    background: url('produktion/menu.svg');
+    background-size: cover;
+    position: absolute;
+    width: 7vw;
+    height: 3vw;
+    margin: auto;
+    bottom: 52vw;
+    left: 91vw;
+    z-index: 4;
+font-family: ratio, sans-serif;
 }
 
 
@@ -530,15 +577,23 @@ life3 {
 
 
 #points {
-    font-size: 2rem;
+    font-size: 3rem;
     position: absolute;
-    bottom: 2vw;
-    left: 3vw;
+    bottom: 1.5vw;
+    left: 2.5vw;
     color: white;
     font-family: ratio, sans-serif;
     text-align: center;
     /* margin-bottom: 155px; */
     z-index: 2;
+}
+
+.red{
+    background-color: red;
+    width: 100vw;
+    height: 56.25vw;
+    opacity: 0.5;
+    background-size: cover;
 }
 
 @keyframes sky_kf {

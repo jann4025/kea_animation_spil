@@ -13,21 +13,22 @@
 <body>
     <div id="screen">
         <div id="menu_background"></div>
+        <div id="dokument_tryk" class="red"></div>
         <div id="game">
             <div id="game_background"></div>
             <div id="game_elements">
                 <div id="social"></div>
-                <div id="pengesedel" class="penge pengesedel"></div>
-                <div id="pengesedel1" class="penge_1 pengesedel"></div>
-                <div id="pengesedel2" class="penge_2 pengesedel"></div>
-                <div id="pengesedel3" class="penge_3 pengesedel"></div>
-                <div id="pengesedel4" class="penge_4 pengesedel"></div>
+                <div id="pengesedel" class="hide pengesedel"></div>
+                <div id="pengesedel1" class="hide penge_1 pengesedel"></div>
+                <div id="pengesedel2" class="hide penge_2 pengesedel"></div>
+                <div id="pengesedel3" class="hide penge_3 pengesedel"></div>
+                <div id="pengesedel4" class="hide penge_4 pengesedel"></div>
                 <div id="menu_knap"></div>
-                <div id="dokument" class="dok"></div>
-                <div id="dokument1" class="dokument_1 dok"></div>
-                <div id="dokument2" class="dokument_2 dok"></div>
-                <div id="dokument3" class="dokument_3 dok" ></div>
-                <div id="dokument4" class="dokument_4 dok"></div>
+                <div id="dokument" class="hide dok"></div>
+                <div id="dokument1" class="hide dokument_1 dok"></div>
+                <div id="dokument2" class="hide dokument_2 dok"></div>
+                <div id="dokument3" class="hide dokument_3 dok" ></div>
+                <div id="dokument4" class="hide dokument_4 dok"></div>
                 <div id="sky" class="sky_flyt"></div>
                 <div id="sky1" class="sky_flyt1"></div>
                 <div id="sky2" class="sky_flyt2"></div>
@@ -46,24 +47,32 @@
                     <div id="life3" class="heart"></div>
                 </div>
                 <div id="time"></div>
+                <div id="time_left"></div>
             </div>
         </div>
         <div id="start">
             <div id="play"></div>
-            <div id="menu_knap"></div>
+            <div id="menu_knap1"></div>
         </div>
         <div id="settings" class="hide">
             <div id="musik"></div>
+            <div id="musik_off" class="hide"></div>
             <div id="lyd"></div>
+            <div id="lyd_off" class="hide"></div>
             <div id="luk"></div>
         </div>
         <div id="gameover" class="hide">
-            <div id="try_again"></div>
+
         </div>
         <div id="levelcomplete" class="hide">
-            <div id="try_again_vundet"></div>
+
         </div>
     </div>
+
+    <audio src="lyde/wuhu1.mp3" id="wuhu"></audio>
+    <audio src="lyde/arrh.mp3" id="arrh"></audio>
+    <audio src="lyde/good-morning-doctor-weird.mp3" id="music" autoplay loop></audio>
+
     <script src="script.js"></script>
 </body>
 </html>
