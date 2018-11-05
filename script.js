@@ -16,7 +16,7 @@ function showStart() {
     document.querySelector("#play").classList.add("pulse");
     document.querySelector("#play").addEventListener("click", playClickHandler);
     document.querySelector("#menu_knap1").addEventListener("click", showSettings);
-    document.querySelector("#music").play();
+
 }
 
 
@@ -52,6 +52,7 @@ function startGame() {
     document.querySelector("#dokument3").addEventListener("click", clickElement);
     document.querySelector("#dokument4").addEventListener("click", clickElement);
     document.querySelector("#menu_knap").addEventListener("click", showSettings);
+    document.querySelector("#music").play();
     showPenge();
     showPenge1();
     showPenge2();
@@ -66,11 +67,14 @@ function startGame() {
 
 
 
+
 }
 
 
 function levelComplete () {
     document.querySelector("#levelcomplete").classList.remove("hide");
+    document.querySelector("#music").pause();
+    document.querySelector("#win").play();
     document.querySelector("#levelcomplete").addEventListener('click', showStart1);
 }
 
@@ -198,6 +202,8 @@ function timeLeftFc() {
 
 function gameOver(){
      document.querySelector("#gameover").classList.remove("hide")
+    document.querySelector("#music").pause();
+    document.querySelector("#lose").play();
      document.querySelector("#gameover").addEventListener('click', showStart1);
 
 }
